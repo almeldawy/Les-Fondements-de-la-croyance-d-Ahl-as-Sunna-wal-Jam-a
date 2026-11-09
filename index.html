@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les Fondements de la croyance d'Ahl as-Sunna wal-Jamâʿa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=JSON.parse(localStorage.getItem('usul-aqida-theme'));if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<div id="progress-bar"></div>
+
+<header class="topbar">
+  <button class="btn" id="menu-btn" aria-label="Sommaire">☰</button>
+  <div class="title">Min Usûl ʿAqîdat Ahl as-Sunna wal-Jamâʿa</div>
+  <button class="btn" id="resume-btn" title="Reprendre là où je me suis arrêté">↻ <span class="lbl">Reprendre</span></button>
+  <button class="btn" id="theme-btn" title="Mode clair / sombre"><span id="theme-ico">☾</span></button>
+</header>
+
+<aside class="sidebar">
+  <div class="prog-box">
+    <div class="row"><strong>Progression</strong><button class="btn" id="reset-btn" style="padding:3px 9px;font-size:13px">Réinitialiser</button></div>
+    <div class="prog-track"><div class="prog-fill" id="prog-fill"></div></div>
+    <div id="prog-txt"></div>
+  </div>
+  <div class="tabs">
+    <button class="active" data-tab="toc">Sommaire</button>
+    <button data-tab="bm">🔖 Marque-pages</button>
+  </div>
+  <nav id="toc"></nav>
+  <div id="bookmarks" hidden></div>
+</aside>
+<div class="overlay"></div>
+
+<main>
+
+<!-- ================= COUVERTURE ================= -->
+<section class="cover">
+  <div class="frame">
+    <div class="ar-title">مِنْ أُصُولِ عَقِيدَةِ أَهْلِ السُّنَّةِ وَالْجَمَاعَةِ</div>
+    <div class="orn">❖ ❖ ❖</div>
+    <h1>Des Fondements de la croyance d'Ahl as-Sunna wal-Jamâʿa</h1>
+    <div class="sub">Traduction française intégrale</div>
+    <div class="author">Son Éminence le Cheikh Docteur<br><strong>Sâlih ibn Fawzân ibn ʿAbdillâh Al-Fawzân</strong><br><span class="sub">Membre du Comité des Grands Savants et du Comité permanent de la Fatwa</span></div>
+    <a class="start" href="#introduction">Commencer la lecture</a>
+  </div>
+</section>
+
+<!-- ================= INTRODUCTION ================= -->
+<section class="chapter" id="introduction" data-toc="Introduction">
+  <div class="ch-head"><div class="titles"><div class="num">Ouverture</div><h2>Introduction</h2><div class="ar-h">مقدمة</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux.</p>
+  <p>Louange à Allah, Seigneur des mondes, qui nous a guidés vers l'Islam :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَمَا كُنَّا لِنَهْتَدِيَ لَوْلَا أَنْ هَدَانَا اللَّهُ﴾ [الأعراف: ٤٣]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Nous n'aurions pas été guidés si Allah ne nous avait pas guidés. » <span class="ref">[Al-Aʿrâf : 43]</span></div>
+
+  <p>Nous Lui demandons, Gloire à Lui, de nous y affermir jusqu'à la mort, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ﴾ [آل عمران: ١٠٢]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ô vous qui avez cru ! Craignez Allah comme Il doit être craint, et ne mourez qu'en musulmans. » <span class="ref">[Âl ʿImrân : 102]</span></div>
+
+  <p>Et [nous Lui demandons] de ne pas faire dévier nos cœurs après nous avoir guidés :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا﴾ [آل عمران: ٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Notre Seigneur ! Ne fais pas dévier nos cœurs après que Tu nous as guidés. » <span class="ref">[Âl ʿImrân : 8]</span></div>
+
+  <p>Qu'Allah prie et salue notre Prophète, notre modèle et notre bien-aimé Muhammad, le Messager d'Allah, qu'Il a envoyé en miséricorde pour les mondes ; et qu'Allah agrée ses Compagnons vertueux et purs, Muhâjirûn et Ansâr, ainsi que ceux qui les ont suivis dans le bien, tant que se succéderont la nuit et le jour. Ceci dit :</p>
+
+  <p>Voici quelques mots concis exposant la croyance d'Ahl as-Sunna wal-Jamâʿa. Ce qui m'a poussé à les écrire, c'est la division et la divergence que vit aujourd'hui la Communauté musulmane, et qui se manifestent dans la multitude des sectes contemporaines et des groupes divers, chacun appelant à sa propre doctrine et faisant l'éloge de son propre groupe, au point que le musulman ignorant se retrouve perplexe : qui suivre ? Sur qui prendre exemple ? Et le mécréant qui veut embrasser l'Islam ne sait plus quel est l'Islam authentique dont il a lu ou entendu parler : l'Islam vers lequel guident le Coran et la Sunna du Prophète ﷺ, l'Islam qu'a incarné la vie des nobles Compagnons et qu'ont suivi les générations préférées. Il ne voit que l'Islam qui prédomine [chez les gens], un nom dépourvu de contenu — comme l'a dit un orientaliste : « L'Islam est voilé », c'est-à-dire [voilé] par ceux qui s'en réclament sans être conformes à sa réalité. Nous ne parlons pas de l'Islam dans sa totalité, car Allah, Gloire à Lui, a garanti sa subsistance par la subsistance de Son Livre, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ﴾ [الحجر: ٩]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« C'est Nous, certes, qui avons fait descendre le Rappel, et c'est Nous qui en sommes, certes, les gardiens. » <span class="ref">[Al-Hijr : 9]</span></div>
+
+  <p>Et par la subsistance d'un groupe de musulmans qui se charge de l'appliquer, de le préserver et de le défendre. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا مَنْ يَرْتَدَّ مِنْكُمْ عَنْ دِينِهِ فَسَوْفَ يَأْتِي اللَّهُ بِقَوْمٍ يُحِبُّهُمْ وَيُحِبُّونَهُ أَذِلَّةٍ عَلَى الْمُؤْمِنِينَ أَعِزَّةٍ عَلَى الْكَافِرِينَ يُجَاهِدُونَ فِي سَبِيلِ اللَّهِ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ﴾ [المائدة: ٥٤]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ô vous qui avez cru ! Quiconque parmi vous apostasie de sa religion… Allah fera venir une communauté qu'Il aime et qui L'aime, humble envers les croyants, fière et puissante envers les mécréants, qui lutte dans le sentier d'Allah et ne craint le blâme d'aucun blâmeur. » <span class="ref">[Al-Mâʾida : 54]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَإِنْ تَتَوَلَّوْا يَسْتَبْدِلْ قَوْمًا غَيْرَكُمْ ثُمَّ لَا يَكُونُوا أَمْثَالَكُمْ﴾ [محمد: ٣٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et si vous vous détournez, Il vous remplacera par un peuple autre que vous, et ils ne seront pas comme vous. » <span class="ref">[Muhammad : 38]</span></div>
+
+  <p>Oui, c'est le groupe au sujet duquel le Messager ﷺ a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«لَا تَزَالُ طَائِفَةٌ مِنْ أُمَّتِي عَلَى الْحَقِّ ظَاهِرِينَ، لَا يَضُرُّهُمْ مَنْ خَذَلَهُمْ وَلَا مَنْ خَالَفَهُمْ، حَتَّى يَأْتِيَ أَمْرُ اللَّهِ تَبَارَكَ وَتَعَالَى وَهُمْ عَلَى ذَلِكَ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Il ne cessera d'y avoir un groupe de ma Communauté triomphant sur la vérité ; ni ceux qui les délaissent ni ceux qui s'opposent à eux ne leur nuiront, jusqu'à ce que vienne l'ordre d'Allah — Béni et Exalté soit-Il — alors qu'ils seront dans cet état. »<sup class="fn"><a href="#n-intro-1">(1)</a></sup></div>
+
+  <p>C'est pourquoi il nous incombe de connaître ce groupe béni qui représente l'Islam authentique — qu'Allah fasse de nous l'un des leurs —, afin que celui qui veut connaître l'Islam authentique et ses véritables tenants le connaisse, pour les prendre en exemple et marcher dans leur sillage, et afin que s'y joigne celui qui, parmi les mécréants, veut entrer dans l'Islam.</p>
+
+  <div class="notes"><ol>
+    <li id="n-intro-1">Rapporté par Al-Bukhârî (7311), Muslim (1920), Abû Dâwûd (4252), At-Tirmidhî (2229), Ibn Mâjah (10) et Ahmad (4/97).</li>
+  </ol></div>
+</section>
+
+<!-- ================= LE GROUPE SAUVÉ ================= -->
+<section class="chapter" id="firqa-najiya" data-toc="Le groupe sauvé : Ahl as-Sunna wal-Jamâʿa">
+  <div class="ch-head"><div class="titles"><div class="num">Chapitre</div><h2>Le groupe sauvé : Ahl as-Sunna wal-Jamâʿa</h2><div class="ar-h">الفرقة الناجية أهل السنة والجماعة</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Les musulmans, à l'époque du Messager d'Allah ﷺ, formaient une seule communauté, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّ هَذِهِ أُمَّتُكُمْ أُمَّةً وَاحِدَةً وَأَنَا رَبُّكُمْ فَاعْبُدُونِ﴾ [الأنبياء: ٩٢]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Certes, cette communauté qui est la vôtre est une communauté unique, et Je suis votre Seigneur ; adorez-Moi donc. » <span class="ref">[Al-Anbiyâʾ : 92]</span></div>
+
+  <p>Combien de fois les Juifs et les hypocrites ont-ils tenté de diviser les musulmans à l'époque du Messager d'Allah ﷺ, sans y parvenir ! Les hypocrites ont dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿لَا تُنْفِقُوا عَلَى مَنْ عِنْدَ رَسُولِ اللَّهِ حَتَّى يَنْفَضُّوا﴾</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ne dépensez pas pour ceux qui sont auprès du Messager d'Allah, jusqu'à ce qu'ils se dispersent. »</div>
+
+  <p>Allah leur a alors répondu par Sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَلِلَّهِ خَزَائِنُ السَّمَاوَاتِ وَالْأَرْضِ وَلَكِنَّ الْمُنَافِقِينَ لَا يَفْقَهُونَ﴾ [المنافقون: ٧]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Or c'est à Allah qu'appartiennent les trésors des cieux et de la terre, mais les hypocrites ne comprennent pas. » <span class="ref">[Al-Munâfiqûn : 7]</span></div>
+
+  <p>Les Juifs ont tenté de diviser les musulmans et de les détourner de leur religion :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَقَالَتْ طَائِفَةٌ مِنْ أَهْلِ الْكِتَابِ آمِنُوا بِالَّذِي أُنْزِلَ عَلَى الَّذِينَ آمَنُوا وَجْهَ النَّهَارِ وَاكْفُرُوا آخِرَهُ لَعَلَّهُمْ يَرْجِعُونَ﴾ [آل عمران: ٧٢]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Un groupe des gens du Livre a dit : “Croyez à ce qui a été révélé à ceux qui ont cru au début du jour, et mécroyez à la fin du jour ; peut-être reviendront-ils [de leur religion].” » <span class="ref">[Âl ʿImrân : 72]</span></div>
+
+  <p>Mais ce plan n'a pas réussi, car Allah l'a dévoilé et démasqué.</p>
+
+  <p>Ils ont tenté une seconde fois : ils se sont mis à rappeler aux Ansâr l'hostilité et les guerres qui avaient eu lieu entre eux avant l'Islam, ainsi que les poèmes satiriques qu'ils avaient échangés. Allah a alors dévoilé leur plan par Sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تُطِيعُوا فَرِيقًا مِنَ الَّذِينَ أُوتُوا الْكِتَابَ يَرُدُّوكُمْ بَعْدَ إِيمَانِكُمْ كَافِرِينَ﴾ [آل عمران: ١٠٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ô vous qui avez cru ! Si vous obéissez à une partie de ceux à qui le Livre a été donné, ils vous feront redevenir mécréants après votre foi. » <span class="ref">[Âl ʿImrân : 100]</span></div>
+
+  <p>jusqu'à Sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَوْمَ تَبْيَضُّ وُجُوهٌ وَتَسْوَدُّ وُجُوهٌ﴾ [آل عمران: ١٠٦]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Le Jour où certains visages s'éclaireront et où d'autres s'assombriront. » <span class="ref">[Âl ʿImrân : 106]</span></div>
+
+  <p>Le Prophète ﷺ est venu aux Ansâr, les a exhortés et leur a rappelé le bienfait de l'Islam et de leur union par lui après la division ; ils se sont alors serré la main et embrassés<sup class="fn"><a href="#n-fn-1">(1)</a></sup>. Le plan des Juifs a échoué et les musulmans sont restés une seule communauté. Allah le Très-Haut leur a ordonné de s'unir sur la vérité et leur a interdit la divergence et la division ; Il a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَلَا تَكُونُوا كَالَّذِينَ تَفَرَّقُوا وَاخْتَلَفُوا مِنْ بَعْدِ مَا جَاءَهُمُ الْبَيِّنَاتُ﴾ [آل عمران: ١٠٥]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et ne soyez pas comme ceux qui se sont divisés et ont divergé après que les preuves évidentes leur furent parvenues. » <span class="ref">[Âl ʿImrân : 105]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا﴾ [آل عمران: ١٠٣]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et cramponnez-vous tous ensemble au câble d'Allah, et ne vous divisez pas. » <span class="ref">[Âl ʿImrân : 103]</span></div>
+
+  <p>Il leur a prescrit, Gloire à Lui, de se rassembler dans l'accomplissement des actes d'adoration : la prière, le jeûne, le pèlerinage et la quête de la science. Le Prophète ﷺ incitait à l'union des musulmans et leur interdisait la division et la divergence. Il ﷺ annonçait — une annonce qui signifie l'incitation à l'union et l'interdiction de la division — qu'une division surviendrait dans cette Communauté, comme elle était survenue chez les communautés qui l'ont précédée. Il ﷺ a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«فَإِنَّهُ مَنْ يَعِشْ مِنْكُمْ فَسَيَرَى اخْتِلَافًا كَثِيرًا، فَعَلَيْكُمْ بِسُنَّتِي وَسُنَّةِ الْخُلَفَاءِ الرَّاشِدِينَ الْمَهْدِيِّينَ مِنْ بَعْدِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Celui d'entre vous qui vivra verra de nombreuses divergences. Attachez-vous donc à ma Sunna et à la Sunna des califes bien-guidés et guidants après moi. »<sup class="fn"><a href="#n-fn-2">(2)</a></sup></div>
+
+  <p>Et il ﷺ a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«افْتَرَقَتِ الْيَهُودُ عَلَى إِحْدَى وَسَبْعِينَ فِرْقَةً، وَافْتَرَقَتِ النَّصَارَى عَلَى اثْنَتَيْنِ وَسَبْعِينَ فِرْقَةً، وَسَتَفْتَرِقُ هَذِهِ الْأُمَّةُ عَلَى ثَلَاثٍ وَسَبْعِينَ فِرْقَةً، كُلُّهَا فِي النَّارِ إِلَّا وَاحِدَةً»، قُلْنَا: مَنْ هِيَ يَا رَسُولَ اللَّهِ؟ قَالَ: «مَنْ كَانَ عَلَى مِثْلِ مَا أَنَا عَلَيْهِ الْيَوْمَ وَأَصْحَابِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Les Juifs se sont divisés en soixante et onze sectes, les Chrétiens se sont divisés en soixante-douze sectes, et cette Communauté se divisera en soixante-treize sectes, toutes dans le Feu sauf une. » Nous avons dit : « Qui est-elle, ô Messager d'Allah ? » Il a dit : « Ceux qui seront sur la même voie que celle sur laquelle je suis aujourd'hui, moi et mes Compagnons. »<sup class="fn"><a href="#n-fn-3">(3)</a></sup></div>
+
+  <p>Ce qu'il ﷺ a annoncé s'est produit : la Communauté s'est divisée à la fin de l'époque des Compagnons. Mais cette division n'a pas beaucoup affecté l'entité de la Communauté durant toute l'époque des générations préférées, dont le Messager d'Allah ﷺ a fait l'éloge par sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«خَيْرُكُمْ قَرْنِي، ثُمَّ الَّذِينَ يَلُونَهُمْ، ثُمَّ الَّذِينَ يَلُونَهُمْ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Les meilleurs d'entre vous sont ma génération, puis ceux qui les suivent, puis ceux qui les suivent. »<sup class="fn"><a href="#n-fn-4">(4)</a></sup></div>
+
+  <p>Le rapporteur a dit : « Je ne sais pas s'il a mentionné après sa génération deux ou trois générations. »</p>
+
+  <p>Cela, en raison de l'abondance des savants — traditionnistes, exégètes et juristes —, parmi lesquels les savants des Tâbiʿûn et des successeurs des Tâbiʿûn, les quatre imams et leurs élèves, et en raison de la puissance de l'État de l'Islam durant ces siècles. La secte dissidente rencontrait donc la sanction dissuasive, par l'argument et par la force.</p>
+
+  <p>Après la fin de l'époque des générations préférées, les musulmans se sont mêlés à d'autres, adeptes de religions opposées ; les sciences des peuples mécréants ont été traduites en arabe ; et les rois de l'Islam ont pris pour proches confidents certains mécréants et égarés, dont certains sont devenus ministres et conseillers. La divergence s'est alors intensifiée, les sectes et les doctrines se sont multipliées et les écoles fausses sont apparues. Cela continue jusqu'à notre époque, et [continuera] jusqu'à ce qu'Allah voudra.</p>
+
+  <p>Mais, louange à Allah, le groupe sauvé — Ahl as-Sunna wal-Jamâʿa — est resté attaché à l'Islam authentique, le suivant et y appelant. Il ne cesse et ne cessera, louange à Allah, d'exister, confirmant ce que le Prophète ﷺ a annoncé quant à la subsistance de ce groupe, sa continuité et sa fermeté. C'est là une faveur d'Allah, Gloire à Lui, afin que cette religion subsiste et que l'argument soit établi contre les opposants obstinés.</p>
+
+  <p>Ce groupe béni représente ce sur quoi étaient les Compagnons — qu'Allah les agrée — avec le Messager ﷺ, en parole, en acte et en croyance, comme il ﷺ a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«هُمْ مَنْ كَانَ عَلَى مِثْلِ مَا أَنَا عَلَيْهِ الْيَوْمَ وَأَصْحَابِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Ce sont ceux qui seront sur la même voie que celle sur laquelle je suis aujourd'hui, moi et mes Compagnons. »<sup class="fn"><a href="#n-fn-5">(5)</a></sup></div>
+
+  <p>Ils sont un reste vertueux, parmi ceux au sujet desquels Allah a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿فَلَوْلَا كَانَ مِنَ الْقُرُونِ مِنْ قَبْلِكُمْ أُولُو بَقِيَّةٍ يَنْهَوْنَ عَنِ الْفَسَادِ فِي الْأَرْضِ﴾ [هود: ١١٦]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Si seulement il y avait eu, parmi les générations d'avant vous, des gens doués de vertu restante, qui interdisaient la corruption sur la terre ! » <span class="ref">[Hûd : 116]</span></div>
+
+  <div class="notes"><ol>
+    <li id="n-fn-1">Voir le <i>Tafsîr</i> d'Ibn Kathîr — qu'Allah lui fasse miséricorde — (2/90), et <i>Asbâb an-Nuzûl</i> d'Al-Wâḥidî, p. 149-150.</li>
+    <li id="n-fn-2">Rapporté par Abû Dâwûd (4607), At-Tirmidhî (2676), Ibn Mâjah (42) et Ahmad (17184).</li>
+    <li id="n-fn-3">Rapporté par At-Tirmidhî (2641).</li>
+    <li id="n-fn-4">Rapporté par Al-Bukhârî (2652), Muslim (2535), At-Tirmidhî (2222), An-Nasâʾî (3809), Abû Dâwûd (4657), Ibn Mâjah (2362) et Ahmad (4/427).</li>
+    <li id="n-fn-5">Rapporté par At-Tirmidhî (2641).</li>
+  </ol></div>
+</section>
+
+<!-- ================= NOMS DU GROUPE SAUVÉ ================= -->
+<section class="chapter" id="noms" data-toc="Les noms du groupe sauvé et leur signification">
+  <div class="ch-head"><div class="titles"><div class="num">Chapitre</div><h2>Les noms du groupe sauvé et leur signification</h2><div class="ar-h">أسماء الفرقة الناجية ومعناها</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Puisque ce groupe est celui qui est préservé de l'égarement, il est nécessaire de connaître ses noms et ses signes afin de le prendre pour modèle. Il possède des noms éminents par lesquels il se distingue de toutes les autres sectes. Parmi les plus importants de ces noms et de ces signes : il est <i>le groupe sauvé</i> (al-firqa an-nâjiya), <i>le clan secouru</i> (aṭ-ṭâʾifa al-manṣûra), <i>Ahl as-Sunna wal-Jamâʿa</i>. Leurs significations sont les suivantes :</p>
+
+  <p><strong>1. Il est le groupe sauvé</strong>, c'est-à-dire sauvé du Feu, puisque le Prophète ﷺ l'a excepté lorsqu'il a mentionné les sectes en disant :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«كُلُّهَا فِي النَّارِ إِلَّا وَاحِدَةً»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Toutes dans le Feu sauf une. »<sup class="fn"><a href="#n-no-1">(1)</a></sup></div>
+  <p>C'est-à-dire qu'elle n'est pas dans le Feu.</p>
+
+  <p><strong>2. Il s'attache au Livre d'Allah, à la Sunna de Son Messager</strong> et à ce sur quoi étaient les premiers devanciers parmi les Muhâjirûn et les Ansâr, puisque le Prophète ﷺ a dit à son sujet :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«هُمْ مَنْ كَانَ عَلَى مِثْلِ مَا أَنَا عَلَيْهِ الْيَوْمَ وَأَصْحَابِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Ce sont ceux qui seront sur la même voie que celle sur laquelle je suis aujourd'hui, moi et mes Compagnons. »<sup class="fn"><a href="#n-no-2">(2)</a></sup></div>
+
+  <p><strong>3. Ses membres sont Ahl as-Sunna wal-Jamâʿa</strong> ; ils se distinguent par deux traits éminents :</p>
+
+  <p><strong>Le premier trait :</strong> leur attachement à la Sunna du Messager ﷺ, au point qu'ils en sont devenus les gens, contrairement à toutes les autres sectes, qui s'attachent à leurs opinions, à leurs passions et aux paroles de leurs chefs. Celles-ci ne se rattachent pas à la Sunna ; elles se rattachent plutôt à leurs innovations et à leurs égarements, comme la Qadariyya et la Murjiʾa, ou à leurs imams, comme la Jahmiyya, ou à leurs actes abjects, comme les Râfiḍa et les Khawârij.</p>
+
+  <p><strong>Le second trait :</strong> ils sont les gens de la Jamâʿa, du fait qu'ils se rassemblent sur la vérité et ne se divisent pas, contrairement aux autres sectes qui ne se rassemblent pas sur une vérité mais suivent leurs passions ; aucune vérité ne les réunit donc.</p>
+
+  <p><strong>4. Il est le clan secouru jusqu'à l'avènement de l'Heure</strong>, car il a secouru la religion d'Allah, et Allah l'a donc secouru, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنْ تَنْصُرُوا اللَّهَ يَنْصُرْكُمْ﴾ [محمد: ٧]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Si vous secourez [la religion d']Allah, Il vous secourra. » <span class="ref">[Muhammad : 7]</span></div>
+
+  <p>C'est pourquoi le Prophète ﷺ a dit à son sujet :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«وَلَا يَضُرُّهُمْ مَنْ خَذَلَهُمْ وَلَا مَنْ خَالَفَهُمْ حَتَّى يَأْتِيَ أَمْرُ اللَّهِ تَبَارَكَ وَتَعَالَى وَهُمْ عَلَى ذَلِكَ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Ni ceux qui les délaissent ni ceux qui s'opposent à eux ne leur nuiront, jusqu'à ce que vienne l'ordre d'Allah — Béni et Exalté soit-Il — alors qu'ils seront dans cet état. »<sup class="fn"><a href="#n-no-3">(3)</a></sup></div>
+
+  <div class="notes"><ol>
+    <li id="n-no-1">Rapporté par At-Tirmidhî (2641), Ibn Mâjah (3993) et Ahmad (3/120).</li>
+    <li id="n-no-2">Référence déjà donnée : voir le chapitre <a href="#firqa-najiya">« Le groupe sauvé »</a>, note 3.</li>
+    <li id="n-no-3">Référence déjà donnée : voir <a href="#introduction">l'Introduction</a>, note 1.</li>
+  </ol></div>
+</section>
+
+<!-- ================= LES FONDEMENTS ================= -->
+<section class="chapter" id="fondements" data-toc="Les fondements d'Ahl as-Sunna wal-Jamâʿa">
+  <div class="ch-head"><div class="titles"><div class="num">Chapitre</div><h2>Les fondements d'Ahl as-Sunna wal-Jamâʿa</h2><div class="ar-h">أصول أهل السنة والجماعة</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Ahl as-Sunna wal-Jamâʿa marchent sur des fondements fermes et clairs en matière de croyance, d'œuvres et de comportement. Ces fondements éminents sont tirés du Livre d'Allah, de la Sunna de Son Messager ﷺ et de ce sur quoi étaient les prédécesseurs (salaf) de cette Communauté parmi les Compagnons, les Tâbiʿûn et ceux qui les ont suivis dans le bien. Ces fondements se résument comme suit :</p>
+</section>
+
+<!-- ================= 1er FONDEMENT ================= -->
+<section class="chapter" id="fondement-1" data-toc="1ᵉʳ fondement : la foi en Allah, en Ses anges, Ses livres, Ses messagers, au Jour dernier et au destin">
+  <div class="ch-head"><div class="titles"><div class="num">Premier fondement</div><h2>La foi en Allah, en Ses anges, en Ses livres, en Ses messagers et au Jour dernier, et la foi au destin, en son bien et en son mal</h2><div class="ar-h">الإيمان بالله وملائكته وكتبه ورسله واليوم الآخر، والإيمان بالقدر خيره وشره</div></div><button class="bm-btn">🔖</button></div>
+
+  <p><strong>1. La foi en Allah :</strong> c'est l'affirmation de Sa seigneurie (rubûbiyya) et de Sa divinité (ulûhiyya), c'est-à-dire l'affirmation des trois catégories du tawhîd, le fait d'y croire et de les mettre en pratique. Ce sont : le tawhîd ar-rubûbiyya, le tawhîd al-ulûhiyya et le tawhîd al-asmâʾ waṣ-ṣifât.</p>
+
+  <p><strong>Le tawhîd ar-rubûbiyya</strong> signifie : unifier Allah dans Ses actes, tels que la création, l'attribution de la subsistance, le fait de donner la vie et la mort, et [reconnaître] qu'Il est le Seigneur et le Souverain de toute chose.</p>
+
+  <p><strong>Le tawhîd al-ulûhiyya</strong> signifie : L'unifier par les actes des serviteurs par lesquels ils se rapprochent de Lui, lorsqu'ils font partie de ce qu'Allah a légiféré, tels que l'invocation, la crainte, l'espoir, l'amour, le sacrifice, le vœu, la demande d'aide (istiʿâna), la demande de protection (istiʿâdha), l'appel au secours (istighâtha), la prière, le jeûne, le pèlerinage, la dépense dans le sentier d'Allah, et tout ce qu'Allah a légiféré et ordonné, sans Lui associer personne d'autre en cela : ni ange, ni prophète, ni saint (walî), ni qui que ce soit d'autre.</p>
+
+  <p><strong>Le tawhîd al-asmâʾ waṣ-ṣifât</strong> signifie : affirmer ce qu'Allah a affirmé pour Lui-même, ou ce que Son Messager a affirmé pour Lui, comme noms et attributs ; et déclarer Allah exempt de ce dont Il s'est Lui-même déclaré exempt, ou dont Son Messager L'a déclaré exempt, comme défauts et imperfections ; sans assimilation (tamthîl) ni comparaison (tachbîh), et sans altération (taḥrîf), ni négation (taʿṭîl), ni interprétation déviante (taʾwîl), comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ﴾ [الشورى: ١١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Rien n'est semblable à Lui, et c'est Lui l'Audient, le Clairvoyant. » <span class="ref">[Ach-Chûrâ : 11]</span></div>
+
+  <p>Et comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَى فَادْعُوهُ بِهَا﴾ [الأعراف: ١٨٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« C'est à Allah qu'appartiennent les plus beaux noms ; invoquez-Le donc par eux. » <span class="ref">[Al-Aʿrâf : 180]</span></div>
+
+  <p><strong>2. La foi aux anges :</strong> elle signifie croire à leur existence, et qu'ils sont des créatures parmi les créatures d'Allah. Il les a créés de lumière pour qu'ils L'adorent et exécutent Ses ordres dans l'univers, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿بَلْ عِبَادٌ مُكْرَمُونَ ۝ لَا يَسْبِقُونَهُ بِالْقَوْلِ وَهُمْ بِأَمْرِهِ يَعْمَلُونَ﴾ [الأنبياء: ٢٦، ٢٧]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ce sont plutôt des serviteurs honorés. Ils ne Le devancent pas en parole, et ils agissent selon Son ordre. » <span class="ref">[Al-Anbiyâʾ : 26-27]</span></div>
+
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿جَاعِلِ الْمَلَائِكَةِ رُسُلًا أُولِي أَجْنِحَةٍ مَثْنَى وَثُلَاثَ وَرُبَاعَ يَزِيدُ فِي الْخَلْقِ مَا يَشَاءُ﴾ [فاطر: ١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« … qui a fait des anges des messagers dotés d'ailes, deux, trois ou quatre. Il ajoute à la création ce qu'Il veut. » <span class="ref">[Fâṭir : 1]</span></div>
+
+  <p><strong>3. La foi aux livres :</strong> elle signifie y croire, ainsi qu'à la guidée et à la lumière qu'ils contiennent, et croire qu'Allah les a révélés à Ses messagers pour guider l'humanité. Les plus éminents d'entre eux sont trois : la Torah, l'Évangile et le Coran ; et le plus éminent des trois est le Noble Coran, qui est le miracle suprême. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿قُلْ لَئِنِ اجْتَمَعَتِ الْإِنْسُ وَالْجِنُّ عَلَى أَنْ يَأْتُوا بِمِثْلِ هَذَا الْقُرْآنِ لَا يَأْتُونَ بِمِثْلِهِ وَلَوْ كَانَ بَعْضُهُمْ لِبَعْضٍ ظَهِيرًا﴾ [الإسراء: ٨٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Dis : “Même si les hommes et les djinns s'unissaient pour produire quelque chose de semblable à ce Coran, ils ne sauraient produire rien de semblable, même s'ils se soutenaient les uns les autres.” » <span class="ref">[Al-Isrâʾ : 88]</span></div>
+
+  <p>Ahl as-Sunna wal-Jamâʿa croient que le Coran est la Parole d'Allah, révélée et non créée — ses lettres et ses sens —, contrairement aux Jahmiyya et aux Muʿtazila, qui disent que le Coran est entièrement créé — ses lettres et ses sens —, et contrairement aux Achʿarites et à ceux qui leur ressemblent, qui disent que la Parole d'Allah, ce sont les sens, et que les lettres, elles, sont créées. Ces deux thèses sont fausses. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَإِنْ أَحَدٌ مِنَ الْمُشْرِكِينَ اسْتَجَارَكَ فَأَجِرْهُ حَتَّى يَسْمَعَ كَلَامَ اللَّهِ﴾ [التوبة: ٦]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et si l'un des associateurs te demande protection, accorde-la-lui afin qu'il entende la Parole d'Allah. » <span class="ref">[At-Tawba : 6]</span></div>
+
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يُرِيدُونَ أَنْ يُبَدِّلُوا كَلَامَ اللَّهِ﴾ [الفتح: ١٥]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ils veulent changer la Parole d'Allah. » <span class="ref">[Al-Fatḥ : 15]</span></div>
+
+  <p>C'est donc la Parole d'Allah, et non la parole d'un autre.</p>
+
+  <p><strong>4. La foi aux messagers :</strong> elle signifie les croire tous, ceux qu'Allah a nommés et ceux qu'Il n'a pas nommés, du premier d'entre eux au dernier. Le dernier d'entre eux et leur sceau est notre Prophète Muhammad — sur lui et sur eux les meilleures prières et la paix. La foi aux messagers est une foi globale (mujmal), tandis que la foi en notre Prophète Muhammad ﷺ est une foi détaillée (mufaṣṣal), accompagnée de la croyance qu'il est le sceau des messagers et qu'il n'y a pas de prophète après lui ; quiconque ne croit pas cela est mécréant.</p>
+
+  <p>La foi aux messagers signifie également ne tomber ni dans l'excès (ifrâṭ) ni dans la négligence (tafrîṭ) à leur égard, contrairement aux Juifs et aux Chrétiens, qui ont outrepassé les limites et exagéré au sujet de certains messagers, au point d'en faire des fils d'Allah, comme le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَقَالَتِ الْيَهُودُ عُزَيْرٌ ابْنُ اللَّهِ وَقَالَتِ النَّصَارَى الْمَسِيحُ ابْنُ اللَّهِ﴾ [التوبة: ٣٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Les Juifs ont dit : “ʿUzayr est le fils d'Allah”, et les Chrétiens ont dit : “Le Messie est le fils d'Allah”. » <span class="ref">[At-Tawba : 30]</span></div>
+
+  <p>Les soufis et les philosophes, eux, ont été négligents envers les messagers : ils les ont rabaissés et leur ont préféré leurs propres imams. Les païens et les athées ont mécru en tous les messagers ; les Juifs ont mécru en ʿÎsâ et en Muhammad — sur eux deux la prière et la paix — ; et les Chrétiens ont mécru en Muhammad. Or quiconque croit en certains d'entre eux et mécroit en d'autres est mécréant envers tous. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّ الَّذِينَ يَكْفُرُونَ بِاللَّهِ وَرُسُلِهِ وَيُرِيدُونَ أَنْ يُفَرِّقُوا بَيْنَ اللَّهِ وَرُسُلِهِ وَيَقُولُونَ نُؤْمِنُ بِبَعْضٍ وَنَكْفُرُ بِبَعْضٍ وَيُرِيدُونَ أَنْ يَتَّخِذُوا بَيْنَ ذَلِكَ سَبِيلًا ۝ أُولَئِكَ هُمُ الْكَافِرُونَ حَقًّا﴾ [النساء: ١٥٠، ١٥١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ceux qui mécroient en Allah et en Ses messagers, qui veulent faire une distinction entre Allah et Ses messagers et qui disent : “Nous croyons en certains et mécroyons en d'autres”, et qui veulent prendre un chemin intermédiaire, ceux-là sont les vrais mécréants. » <span class="ref">[An-Nisâʾ : 150-151]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ﴾ [البقرة: ٢٨٥]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Nous ne faisons aucune distinction entre Ses messagers. » <span class="ref">[Al-Baqara : 285]</span></div>
+
+  <p><strong>5. La foi au Jour dernier :</strong> elle signifie croire à tout ce qui se produit après la mort, de ce dont Allah et Son Messager ont informé : le châtiment de la tombe et ses délices, la résurrection hors des tombes, le rassemblement, le jugement, la pesée des œuvres, la remise des registres dans la main droite ou dans la main gauche, le Pont (aṣ-ṣirâṭ), le Paradis et le Feu ; ainsi que s'y préparer par les bonnes œuvres, l'abandon des mauvaises œuvres et le repentir de celles-ci.</p>
+
+  <p>Ont mécru au Jour dernier les matérialistes (ad-dahriyyûn) et les polythéistes.</p>
+
+  <p>Les Juifs et les Chrétiens, quant à eux, n'y ont pas cru de la foi juste qui est exigée, même s'ils ont cru à sa survenue :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَقَالُوا لَنْ يَدْخُلَ الْجَنَّةَ إِلَّا مَنْ كَانَ هُودًا أَوْ نَصَارَى﴾ [البقرة: ١١١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et ils ont dit : “Nul n'entrera au Paradis s'il n'est juif ou chrétien.” » <span class="ref">[Al-Baqara : 111]</span></div>
+
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿قَالُوا لَنْ تَمَسَّنَا النَّارُ إِلَّا أَيَّامًا مَعْدُودَاتٍ﴾ [آل عمران: ٢٤]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ils ont dit : “Le Feu ne nous touchera que pendant un nombre de jours déterminé.” » <span class="ref">[Âl ʿImrân : 24]</span></div>
+
+  <p><strong>6. La foi au destin (al-qadar) :</strong> elle signifie croire qu'Allah connaît toute chose, ce qui a été et ce qui sera, qu'Il a décrété cela dans la Table préservée, et que tout ce qui se produit — bien ou mal, mécréance ou foi, obéissance ou désobéissance — Allah l'a voulu, l'a décrété et l'a créé ; et qu'Il aime l'obéissance et déteste la désobéissance.</p>
+
+  <p>Les serviteurs ont une capacité sur leurs actes, ainsi qu'un libre choix et une volonté concernant ce qui se produit de leur part comme obéissance ou désobéissance — mais tout cela est soumis à la volonté et au vouloir d'Allah —, contrairement aux Jabriyya, qui disent : « Le serviteur est contraint dans ses actes, il n'a pas de libre choix », et aux Qadariyya, qui disent : « Le serviteur possède une volonté indépendante et il crée son propre acte, indépendamment de la volonté et du vouloir d'Allah. »</p>
+
+  <p>Allah a réfuté les deux groupes par Sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَمَا تَشَاءُونَ إِلَّا أَنْ يَشَاءَ اللَّهُ﴾ [الإنسان: ٣٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et vous ne voulez que si Allah veut. » <span class="ref">[Al-Insân : 30]</span></div>
+
+  <p>Il a affirmé pour le serviteur un vouloir, en réfutation des Jabriyya extrémistes, et l'a rendu soumis au vouloir d'Allah, en réfutation des Qadariyya négateurs.</p>
+
+  <p>La foi au destin procure au serviteur la patience face aux malheurs et l'éloignement des péchés et des malheurs. De même, elle le pousse à l'action et éloigne de lui l'impuissance, la peur et la paresse.</p>
+</section>
+
+<!-- ================= 2e FONDEMENT ================= -->
+<section class="chapter" id="fondement-2" data-toc="2ᵉ fondement : la foi est parole, acte et croyance">
+  <div class="ch-head"><div class="titles"><div class="num">Deuxième fondement</div><h2>La foi est parole, acte et croyance ; elle augmente par l'obéissance et diminue par la désobéissance</h2><div class="ar-h">الإيمان قول وعمل واعتقاد يزيد بالطاعة وينقص بالمعصية</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : la foi est parole, acte et croyance ; elle augmente par l'obéissance et diminue par la désobéissance. La foi n'est donc pas parole et acte sans croyance, car cela est la foi des hypocrites ; et elle n'est pas non plus la simple connaissance sans parole ni acte, car cela est la foi des mécréants négateurs. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَجَحَدُوا بِهَا وَاسْتَيْقَنَتْهَا أَنْفُسُهُمْ ظُلْمًا وَعُلُوًّا﴾ [النمل: ١٤]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ils les ont niés injustement et par orgueil, alors qu'en eux-mêmes ils y croyaient avec certitude. » <span class="ref">[An-Naml : 14]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿قَدْ نَعْلَمُ إِنَّهُ لَيَحْزُنُكَ الَّذِي يَقُولُونَ فَإِنَّهُمْ لَا يُكَذِّبُونَكَ وَلَكِنَّ الظَّالِمِينَ بِآيَاتِ اللَّهِ يَجْحَدُونَ﴾ [الأنعام: ٣٣]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Nous savons que ce qu'ils disent t'attriste. Ce n'est pas toi qu'ils traitent de menteur, mais ce sont les versets d'Allah que les injustes nient. » <span class="ref">[Al-Anʿâm : 33]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَعَادًا وَثَمُودَ وَقَدْ تَبَيَّنَ لَكُمْ مِنْ مَسَاكِنِهِمْ وَزَيَّنَ لَهُمُ الشَّيْطَانُ أَعْمَالَهُمْ فَصَدَّهُمْ عَنِ السَّبِيلِ وَكَانُوا مُسْتَبْصِرِينَ﴾ [العنكبوت: ٣٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et les ʿÂd et les Thamûd — cela vous est clairement apparu à travers leurs demeures. Le Diable leur avait embelli leurs œuvres, et il les avait détournés du droit chemin, alors qu'ils étaient clairvoyants. » <span class="ref">[Al-ʿAnkabût : 38]</span></div>
+
+  <p>La foi n'est pas non plus croyance seulement, ou parole et croyance sans acte, car cela est la foi des Murjiʾa. Allah le Très-Haut appelle souvent les œuvres « foi ». Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ إِذَا ذُكِرَ اللَّهُ وَجِلَتْ قُلُوبُهُمْ وَإِذَا تُلِيَتْ عَلَيْهِمْ آيَاتُهُ زَادَتْهُمْ إِيمَانًا وَعَلَى رَبِّهِمْ يَتَوَكَّلُونَ ۝ الَّذِينَ يُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ ۝ أُولَئِكَ هُمُ الْمُؤْمِنُونَ حَقًّا﴾ [الأنفال: ٢-٤]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Les vrais croyants sont seulement ceux dont les cœurs frémissent quand Allah est mentionné, dont la foi augmente quand Ses versets leur sont récités, et qui s'en remettent à leur Seigneur ; ceux qui accomplissent la prière et dépensent de ce que Nous leur avons attribué. Ceux-là sont les croyants en vérité. » <span class="ref">[Al-Anfâl : 2-4]</span></div>
+
+  <p>Et le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ﴾ [البقرة: ١٤٣]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et Allah n'était pas homme à laisser perdre votre foi. » <span class="ref">[Al-Baqara : 143]</span></div>
+
+  <p>C'est-à-dire : votre prière en direction de Bayt al-Maqdis. Il a appelé la prière « foi ».</p>
+</section>
+
+<!-- ================= 3e FONDEMENT ================= -->
+<section class="chapter" id="fondement-3" data-toc="3ᵉ fondement : ne déclarer mécréant aucun musulman, sauf par un annulatif de l'Islam">
+  <div class="ch-head"><div class="titles"><div class="num">Troisième fondement</div><h2>Ne déclarer mécréant aucun musulman, sauf s'il commet l'un des annulatifs de l'Islam</h2><div class="ar-h">عدم تكفير أحد من المسلمين إلا بارتكاب ناقض من نواقض الإسلام</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : ils ne déclarent mécréant aucun musulman, sauf s'il commet l'un des annulatifs de l'Islam. Quant aux grands péchés qui sont en deçà du polythéisme et dont aucune preuve n'indique la mécréance de leur auteur — comme le délaissement de la prière par paresse —, ils ne jugent pas leur auteur — c'est-à-dire l'auteur des grands péchés — mécréant ; ils le jugent plutôt pervers (fâsiq) et de foi diminuée. S'il ne s'en repent pas, il est soumis à la volonté [d'Allah] : si Allah veut, Il lui pardonne, et s'Il veut, Il le châtie, mais il ne demeurera pas éternellement dans le Feu. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّ اللَّهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَلِكَ لِمَنْ يَشَاءُ﴾ [النساء: ٤٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Certes, Allah ne pardonne pas qu'on Lui associe [quoi que ce soit], et Il pardonne ce qui est en deçà de cela à qui Il veut. » <span class="ref">[An-Nisâʾ : 48]</span></div>
+
+  <p>La doctrine d'Ahl as-Sunna en cela est un juste milieu entre les Khawârij, qui déclarent mécréant l'auteur d'un grand péché même si celui-ci est en deçà de la mécréance, et les Murjiʾa, qui disent qu'il est un croyant à la foi complète et qui disent : « Aucune désobéissance ne nuit avec la foi, de même qu'aucune obéissance ne profite avec la mécréance. »</p>
+</section>
+
+<!-- ================= 4e FONDEMENT ================= -->
+<section class="chapter" id="fondement-4" data-toc="4ᵉ fondement : obéir aux gouverneurs des musulmans tant qu'ils n'ordonnent pas un péché">
+  <div class="ch-head"><div class="titles"><div class="num">Quatrième fondement</div><h2>L'obligation d'obéir aux gouverneurs des musulmans tant qu'ils n'ordonnent pas un péché</h2><div class="ar-h">وجوب طاعة ولاة أمور المسلمين ما لم يأمروا بمعصية</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : l'obligation d'obéir aux gouverneurs des musulmans tant qu'ils n'ordonnent pas un péché. S'ils ordonnent un péché, il n'est pas permis de leur obéir en cela, et l'obéissance qui leur est due dans le convenable demeure pour le reste. [Ils agissent ainsi] en application de la parole du Très-Haut :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ﴾ [النساء: ٥٩]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ô vous qui avez cru ! Obéissez à Allah, obéissez au Messager et à ceux d'entre vous qui détiennent l'autorité. » <span class="ref">[An-Nisâʾ : 59]</span></div>
+
+  <p>Et de la parole du Prophète ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«أُوصِيكُمْ بِتَقْوَى اللَّهِ وَالسَّمْعِ وَالطَّاعَةِ، وَإِنْ تَأَمَّرَ عَلَيْكُمْ عَبْدٌ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Je vous recommande la crainte d'Allah, l'écoute et l'obéissance, même si c'est un esclave qui est placé à votre tête. »<sup class="fn"><a href="#n-f4-1">(1)</a></sup></div>
+
+  <p>Ils considèrent que désobéir à l'émir musulman est une désobéissance au Messager ﷺ, en application de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«مَنْ يُطِعِ الْأَمِيرَ فَقَدْ أَطَاعَنِي، وَمَنْ يَعْصِ الْأَمِيرَ فَقَدْ عَصَانِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Quiconque obéit à l'émir m'a obéi, et quiconque désobéit à l'émir m'a désobéi. »<sup class="fn"><a href="#n-f4-2">(2)</a></sup></div>
+
+  <p>Ils considèrent [légitime] de prier derrière eux, de mener le jihâd avec eux, d'invoquer pour eux la droiture et la rectitude, et de leur prodiguer le conseil sincère.</p>
+
+  <div class="notes"><ol>
+    <li id="n-f4-1">Référence déjà donnée : voir le chapitre <a href="#firqa-najiya">« Le groupe sauvé »</a>, note 2.</li>
+    <li id="n-f4-2">Rapporté par Al-Bukhârî (2957), Muslim (1835), An-Nasâʾî (4193), Ibn Mâjah (2859) et Ahmad (3/387).</li>
+  </ol></div>
+</section>
+
+<!-- ================= 5e FONDEMENT ================= -->
+<section class="chapter" id="fondement-5" data-toc="5ᵉ fondement : l'interdiction de se soulever contre les gouverneurs pour une transgression en deçà de la mécréance">
+  <div class="ch-head"><div class="titles"><div class="num">Cinquième fondement</div><h2>L'interdiction de se soulever contre les gouverneurs des musulmans s'ils commettent une transgression en deçà de la mécréance</h2><div class="ar-h">تحريم الخروج على ولاة أمور المسلمين إذا ارتكبوا مخالفة دون الكفر</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna : l'interdiction de se soulever contre les gouverneurs des musulmans s'ils commettent une transgression en deçà de la mécréance, en raison de l'ordre qu'il ﷺ a donné de leur obéir dans ce qui n'est pas un péché, tant que ne se produit pas de leur part une mécréance flagrante (kufr bawâḥ) ; contrairement aux Muʿtazila, qui rendent obligatoire le soulèvement contre les imams s'ils commettent l'un des grands péchés, même s'il n'est pas mécréance, et qui considèrent cela comme faisant partie de la commanderie du bien et du pourchas du mal. En réalité, cet agissement des Muʿtazila est le pire des maux, en raison des graves dangers qui en découlent : le chaos, la corruption des affaires, la discorde et la domination des ennemis.</p>
+</section>
+
+<!-- ================= 6e FONDEMENT ================= -->
+<section class="chapter" id="fondement-6" data-toc="6ᵉ fondement : la pureté des cœurs et des langues envers les Compagnons">
+  <div class="ch-head"><div class="titles"><div class="num">Sixième fondement</div><h2>La pureté de leurs cœurs et de leurs langues envers les Compagnons du Messager d'Allah ﷺ</h2><div class="ar-h">سلامة قلوبهم وألسنتهم لأصحاب رسول الله ﷺ</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : la pureté de leurs cœurs et de leurs langues envers les Compagnons du Messager d'Allah ﷺ, telle qu'Allah les a décrits dans Sa parole lorsqu'Il a mentionné les Muhâjirûn et les Ansâr et fait leur éloge. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَالَّذِينَ جَاءُوا مِنْ بَعْدِهِمْ يَقُولُونَ رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَءُوفٌ رَحِيمٌ﴾ [الحشر: ١٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Et ceux qui sont venus après eux disent : “Notre Seigneur ! Pardonne-nous ainsi qu'à nos frères qui nous ont précédés dans la foi, et ne mets dans nos cœurs aucune rancune envers ceux qui ont cru. Notre Seigneur, Tu es Compatissant et Très Miséricordieux.” » <span class="ref">[Al-Ḥachr : 10]</span></div>
+
+  <p>Et en application de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«لَا تَسُبُّوا أَصْحَابِي، فَوَالَّذِي نَفْسِي بِيَدِهِ لَوْ أَنْفَقَ أَحَدُكُمْ مِثْلَ أُحُدٍ ذَهَبًا مَا بَلَغَ مُدَّ أَحَدِهِمْ وَلَا نَصِيفَهُ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« N'insultez pas mes Compagnons ! Par Celui qui détient mon âme dans Sa main, si l'un de vous dépensait l'équivalent du mont Uḥud en or, il n'atteindrait pas le mudd de l'un d'eux, ni même sa moitié. »<sup class="fn"><a href="#n-f6-1">(1)</a></sup></div>
+
+  <p>Et ce, contrairement aux innovateurs parmi les Râfiḍa et les Khawârij, qui insultent les Compagnons et renient leurs mérites. Ahl as-Sunna considèrent que le calife après le Messager d'Allah ﷺ est Abû Bakr, puis ʿUmar, puis ʿUthmân, puis ʿAlî — qu'Allah les agrée tous. Quiconque conteste le califat de l'un d'eux est plus égaré que l'âne de sa famille, car il contredit le texte et le consensus sur le califat de ceux-ci selon cet ordre.</p>
+
+  <div class="notes"><ol>
+    <li id="n-f6-1">Rapporté par Al-Bukhârî (3673), Muslim (2541), At-Tirmidhî (3861), Abû Dâwûd (4658), Ibn Mâjah (161) et Ahmad (3/55).</li>
+  </ol></div>
+</section>
+
+<!-- ================= 7e FONDEMENT ================= -->
+<section class="chapter" id="fondement-7" data-toc="7ᵉ fondement : l'amour des gens de la maison du Prophète ﷺ">
+  <div class="ch-head"><div class="titles"><div class="num">Septième fondement</div><h2>L'amour des gens de la maison du Messager d'Allah ﷺ et l'allégeance envers eux</h2><div class="ar-h">محبة أهل بيت رسول الله ﷺ وتولّيهم</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : l'amour des gens de la maison (Ahl al-Bayt) du Messager d'Allah ﷺ et l'allégeance envers eux, en application de la recommandation du Messager d'Allah ﷺ par sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«أُذَكِّرُكُمُ اللَّهَ فِي أَهْلِ بَيْتِي»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Je vous rappelle Allah au sujet des gens de ma maison. »<sup class="fn"><a href="#n-f7-1">(1)</a></sup></div>
+
+  <p>Font partie des gens de sa maison ses épouses, les Mères des croyants — qu'Allah les agrée et les satisfasse. Allah le Très-Haut a dit, après s'être adressé à elles par Sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿يَا نِسَاءَ النَّبِيِّ﴾ [الأحزاب: ٣٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Ô femmes du Prophète ! » <span class="ref">[Al-Aḥzâb : 30]</span></div>
+
+  <p>et leur avoir adressé des conseils et promis une récompense immense :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنْكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا﴾ [الأحزاب: ٣٣]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Allah veut seulement éloigner de vous la souillure, ô gens de la maison, et vous purifier pleinement. » <span class="ref">[Al-Aḥzâb : 33]</span></div>
+
+  <p>À l'origine, les gens de la maison sont les proches parents du Prophète ﷺ ; ce qui est visé ici, ce sont spécifiquement les vertueux d'entre eux. Quant à ses proches qui ne sont pas vertueux, ils n'ont pas ce droit, comme son oncle Abû Lahab et ceux qui lui ressemblent. Le Très-Haut a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ﴾ [المسد: ١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Que périssent les deux mains d'Abû Lahab, et qu'il périsse lui-même ! » <span class="ref">[Al-Masad : 1]</span></div>
+
+  <p>La simple parenté avec le Messager ﷺ et le fait de se rattacher à lui, sans droiture dans la religion, ne sont d'aucune utilité à celui qui s'en prévaut auprès d'Allah. Il ﷺ a dit :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«يَا مَعْشَرَ قُرَيْشٍ، اشْتَرُوا أَنْفُسَكُمْ، لَا أُغْنِي عَنْكُمْ مِنَ اللَّهِ شَيْئًا، يَا عَبَّاسُ عَمَّ رَسُولِ اللَّهِ، لَا أُغْنِي عَنْكَ مِنَ اللَّهِ شَيْئًا، يَا صَفِيَّةُ عَمَّةَ رَسُولِ اللَّهِ، لَا أُغْنِي عَنْكِ مِنَ اللَّهِ شَيْئًا، يَا فَاطِمَةُ بِنْتَ مُحَمَّدٍ، سَلِينِي مِنْ مَالِي مَا شِئْتِ، لَا أُغْنِي عَنْكِ مِنَ اللَّهِ شَيْئًا»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Ô assemblée de Quraych ! Rachetez vos âmes, je ne vous serai d'aucune utilité auprès d'Allah. Ô ʿAbbâs, oncle du Messager d'Allah, je ne te serai d'aucune utilité auprès d'Allah. Ô Ṣafiyya, tante du Messager d'Allah, je ne te serai d'aucune utilité auprès d'Allah. Ô Fâṭima, fille de Muhammad, demande-moi de mes biens ce que tu veux, je ne te serai d'aucune utilité auprès d'Allah. »<sup class="fn"><a href="#n-f7-2">(2)</a></sup></div>
+
+  <p>Les proches vertueux du Messager ont sur nous le droit d'être honorés, aimés et respectés. Mais il ne nous est pas permis d'exagérer à leur sujet en nous rapprochant d'eux par quelque acte d'adoration que ce soit, ni de croire qu'ils apportent un bienfait ou causent un tort en dehors d'Allah, car Allah, Gloire à Lui, dit à Son Prophète ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿قُلْ إِنِّي لَا أَمْلِكُ لَكُمْ ضَرًّا وَلَا رَشَدًا﴾ [الجن: ٢١]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Dis : “Je ne détiens pour vous ni mal ni bonne direction.” » <span class="ref">[Al-Jinn : 21]</span></div>
+
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿قُلْ لَا أَمْلِكُ لِنَفْسِي نَفْعًا وَلَا ضَرًّا إِلَّا مَا شَاءَ اللَّهُ وَلَوْ كُنْتُ أَعْلَمُ الْغَيْبَ لَاسْتَكْثَرْتُ مِنَ الْخَيْرِ وَمَا مَسَّنِيَ السُّوءُ﴾ [الأعراف: ١٨٨]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Dis : “Je ne détiens pour moi-même ni profit ni dommage, sauf ce qu'Allah veut. Si je connaissais l'Invisible, j'aurais obtenu beaucoup de bien et aucun mal ne m'aurait touché.” » <span class="ref">[Al-Aʿrâf : 188]</span></div>
+
+  <p>Si tel est le cas du Messager ﷺ, qu'en est-il des autres ?!</p>
+
+  <p>Ce que croient donc certaines personnes au sujet de ceux qui se rattachent à la parenté du Messager est une croyance fausse.</p>
+
+  <div class="notes"><ol>
+    <li id="n-f7-1">Rapporté par Muslim (2408) et Ahmad (4/367).</li>
+    <li id="n-f7-2">Rapporté par Al-Bukhârî (2753), Muslim (206), At-Tirmidhî (3185), An-Nasâʾî (3646) et Ahmad (2/350).</li>
+  </ol></div>
+</section>
+
+<!-- ================= 8e FONDEMENT ================= -->
+<section class="chapter" id="fondement-8" data-toc="8ᵉ fondement : la croyance aux prodiges des saints">
+  <div class="ch-head"><div class="titles"><div class="num">Huitième fondement</div><h2>La croyance aux prodiges (karâmât) des saints</h2><div class="ar-h">التصديق بكرامات الأولياء</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa : la croyance aux prodiges des saints (awliyâʾ), c'est-à-dire aux phénomènes extraordinaires qu'Allah fait parfois survenir par les mains de certains d'entre eux, pour les honorer, comme l'indiquent le Livre et la Sunna.</p>
+
+  <p>Les Muʿtazila et les Jahmiyya ont nié l'existence des prodiges ; or c'est là la négation d'une réalité connue.</p>
+
+  <p>Mais il nous faut savoir que, de nos jours, certaines personnes se sont égarées au sujet des prodiges et ont exagéré, au point d'y faire entrer ce qui n'en fait pas partie : la prestidigitation (ach-chaʿwadha), les œuvres des sorciers, des démons et des imposteurs. La différence est claire entre le prodige et la prestidigitation : le prodige est ce qui survient par les mains des serviteurs vertueux d'Allah, tandis que la prestidigitation est ce qui survient par la main des sorciers, des mécréants et des athées, dans le but d'égarer les gens et de leur extorquer leurs biens. Le prodige a pour cause l'obéissance, et la prestidigitation a pour cause la mécréance et les péchés.</p>
+</section>
+
+<!-- ================= 9e FONDEMENT ================= -->
+<section class="chapter" id="fondement-9" data-toc="9ᵉ fondement : suivre le Livre et la Sunna, intérieurement et extérieurement">
+  <div class="ch-head"><div class="titles"><div class="num">Neuvième fondement</div><h2>Suivre ce qui est venu dans le Livre d'Allah ou dans la Sunna du Messager d'Allah ﷺ, intérieurement et extérieurement</h2><div class="ar-h">اتباع ما جاء في كتاب الله أو سنة رسول الله ﷺ باطنًا وظاهرًا</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Parmi les fondements d'Ahl as-Sunna wal-Jamâʿa en matière de déduction des preuves (istidlâl) : suivre ce qui est venu dans le Livre d'Allah ou dans la Sunna du Messager d'Allah ﷺ, intérieurement et extérieurement ; suivre ce sur quoi étaient les Compagnons parmi les Muhâjirûn et les Ansâr de façon générale, et suivre les califes bien-guidés de façon particulière, puisque le Prophète ﷺ l'a recommandé par sa parole :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«عَلَيْكُمْ بِسُنَّتِي وَسُنَّةِ الْخُلَفَاءِ الرَّاشِدِينَ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Attachez-vous à ma Sunna et à la Sunna des califes bien-guidés. »<sup class="fn"><a href="#n-f9-1">(1)</a></sup></div>
+
+  <p>Ils ne font passer la parole de personne avant la Parole d'Allah et la parole de Son Messager ; c'est pourquoi on les a appelés les gens du Livre et de la Sunna. Après s'en être tenus au Livre d'Allah et à la Sunna de Son Messager, ils s'en tiennent à ce sur quoi les savants de la Communauté se sont accordés ; c'est le troisième fondement sur lequel ils s'appuient après les deux premiers : le Livre et la Sunna.</p>
+
+  <p>Ce sur quoi les gens divergent, ils le ramènent au Livre et à la Sunna, en application de la parole du Très-Haut :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿فَإِنْ تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ إِنْ كُنْتُمْ تُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ ذَلِكَ خَيْرٌ وَأَحْسَنُ تَأْوِيلًا﴾ [النساء: ٥٩]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Puis, si vous vous disputez au sujet de quoi que ce soit, ramenez-le à Allah et au Messager, si vous croyez en Allah et au Jour dernier. Cela est meilleur et d'une meilleure interprétation. » <span class="ref">[An-Nisâʾ : 59]</span></div>
+
+  <p>Ils ne croient à l'infaillibilité de personne en dehors du Messager d'Allah ﷺ ; ils ne se montrent partiaux envers l'opinion de personne tant qu'elle n'est pas conforme au Livre et à la Sunna ; ils croient que le mujtahid peut se tromper comme viser juste ; et ils ne permettent l'ijtihâd qu'à celui qui en réunit les conditions connues chez les gens de science.</p>
+
+  <p>Chez eux, il n'y a pas de désaveu (inkâr) dans les questions où l'ijtihâd est admissible. La divergence dans les questions d'ijtihâd n'entraîne pas, chez eux, l'hostilité et la rupture entre eux, comme le font les fanatiques et les gens d'innovation ; au contraire, ils s'aiment les uns les autres, se prennent mutuellement pour alliés et prient les uns derrière les autres, malgré leur divergence sur certaines questions secondaires ; contrairement aux gens d'innovation, qui prennent pour ennemis, déclarent égarés ou déclarent mécréants ceux qui les contredisent.</p>
+
+  <div class="notes"><ol>
+    <li id="n-f9-1">Rapporté par Abû Dâwûd (4607), At-Tirmidhî (2676), Ibn Mâjah (42) et Ahmad (17184).</li>
+  </ol></div>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section class="chapter" id="conclusion" data-toc="Conclusion">
+  <div class="ch-head"><div class="titles"><div class="num">Fin de l'ouvrage</div><h2>Conclusion</h2><div class="ar-h">الخاتمة</div></div><button class="bm-btn">🔖</button></div>
+
+  <p>Ensuite, en plus de ces fondements qui ont été mentionnés, ils se parent de qualités éminentes qui font partie des compléments de la croyance. Parmi les plus éminentes de ces qualités :</p>
+
+  <p><strong>Premièrement :</strong> ils commandent le bien et interdisent le mal, selon ce qu'exige la Charia, en application de la parole du Très-Haut :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿كُنْتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ تَأْمُرُونَ بِالْمَعْرُوفِ وَتَنْهَوْنَ عَنِ الْمُنْكَرِ وَتُؤْمِنُونَ بِاللَّهِ﴾ [آل عمران: ١١٠]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Vous êtes la meilleure communauté qu'on ait fait surgir pour les hommes : vous commandez le bien, interdisez le mal et croyez en Allah. » <span class="ref">[Âl ʿImrân : 110]</span></div>
+
+  <p>Et de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«مَنْ رَأَى مِنْكُمْ مُنْكَرًا فَلْيُغَيِّرْهُ بِيَدِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِلِسَانِهِ، فَإِنْ لَمْ يَسْتَطِعْ فَبِقَلْبِهِ، وَذَلِكَ أَضْعَفُ الْإِيمَانِ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Que celui d'entre vous qui voit un mal le change de sa main ; s'il ne le peut pas, alors par sa langue ; et s'il ne le peut pas, alors par son cœur, et c'est là le plus faible degré de la foi. »<sup class="fn"><a href="#n-co-1">(1)</a></sup></div>
+
+  <p>Nous avons dit « selon ce qu'exige la Charia », contrairement aux Muʿtazila, qui sortent, dans la commanderie du bien et le pourchas du mal, de ce qu'exige la Charia : ils considèrent en effet que la commanderie du bien et le pourchas du mal consistent à se soulever contre les gouverneurs des musulmans s'ils commettent un péché, même en deçà de la mécréance. Ahl as-Sunna wal-Jamâʿa, eux, considèrent qu'il faut les conseiller en cela, sans se soulever contre eux, et ce, afin de préserver l'unité et de s'éloigner de la division et de la divergence.</p>
+
+  <p>Cheikh al-Islâm Ibn Taymiyya — qu'Allah lui fasse miséricorde — a dit : « Il est rare que l'on connaisse un groupe qui se soit soulevé contre un détenteur du pouvoir sans que son soulèvement n'ait entraîné une corruption plus grande que celle qu'il y avait à supprimer. »<sup class="fn"><a href="#n-co-2">(2)</a></sup></p>
+
+  <p><strong>Deuxièmement :</strong> parmi les qualités d'Ahl as-Sunna wal-Jamâʿa, il y a la préservation de l'accomplissement des rites de l'Islam, tels que l'accomplissement de la prière du vendredi et de la prière en commun, contrairement aux innovateurs et aux hypocrites, qui n'accomplissent pas le vendredi ni la prière en commun.</p>
+
+  <p><strong>Troisièmement :</strong> parmi leurs qualités, il y a le fait qu'ils prodiguent le conseil sincère à tout musulman et s'entraident dans la bonté et la piété, en application de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«الدِّينُ النَّصِيحَةُ»، قُلْنَا: لِمَنْ؟ قَالَ: «لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« La religion est le conseil sincère. » Nous avons dit : « Envers qui ? » Il a dit : « Envers Allah, envers Son Livre, envers Son Messager, envers les dirigeants des musulmans et envers l'ensemble d'entre eux. »<sup class="fn"><a href="#n-co-3">(3)</a></sup></div>
+
+  <p>Et de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«الْمُؤْمِنُ لِلْمُؤْمِنِ كَالْبُنْيَانِ يَشُدُّ بَعْضُهُ بَعْضًا»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Le croyant est pour le croyant tel un édifice dont les parties se soutiennent les unes les autres. »<sup class="fn"><a href="#n-co-4">(4)</a></sup></div>
+
+  <p><strong>Quatrièmement :</strong> parmi leurs qualités, il y a leur fermeté dans les situations d'épreuve, par la patience face à l'adversité, la reconnaissance dans l'aisance et la satisfaction devant l'amertume du décret divin.</p>
+
+  <p><strong>Cinquièmement :</strong> parmi leurs qualités, ils se parent des nobles caractères et des belles œuvres : la bienfaisance envers les parents, le maintien des liens de parenté et le bon voisinage ; et ils interdisent l'orgueil, la vanité, l'abus, l'injustice et la hauteur envers les gens, en application de la parole du Très-Haut :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar">﴿وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا وَبِالْوَالِدَيْنِ إِحْسَانًا وَبِذِي الْقُرْبَى وَالْيَتَامَى وَالْمَسَاكِينِ وَالْجَارِ ذِي الْقُرْبَى وَالْجَارِ الْجُنُبِ وَالصَّاحِبِ بِالْجَنْبِ وَابْنِ السَّبِيلِ وَمَا مَلَكَتْ أَيْمَانُكُمْ إِنَّ اللَّهَ لَا يُحِبُّ مَنْ كَانَ مُخْتَالًا فَخُورًا﴾ [النساء: ٣٦]</div>
+  <div class="label">Traduction française</div>
+  <div class="tr">« Adorez Allah et ne Lui associez rien. Agissez avec bienfaisance envers les père et mère, les proches, les orphelins, les pauvres, le proche voisin, le voisin lointain, le compagnon de côté, le voyageur et ceux que vos mains droites possèdent. Certes, Allah n'aime pas celui qui est orgueilleux et vantard. » <span class="ref">[An-Nisâʾ : 36]</span></div>
+
+  <p>Et de sa parole ﷺ :</p>
+  <div class="label">Texte arabe</div>
+  <div class="ar hadith">«أَكْمَلُ الْمُؤْمِنِينَ إِيمَانًا أَحْسَنُهُمْ خُلُقًا»</div>
+  <div class="label">Traduction française</div>
+  <div class="tr hadith">« Les croyants dont la foi est la plus parfaite sont ceux qui ont le meilleur caractère. »<sup class="fn"><a href="#n-co-5">(5)</a></sup></div>
+
+  <p>Nous demandons à Allah — à Lui la puissance et la majesté — de faire de nous l'un d'entre eux, par Sa grâce et Sa générosité, et de ne pas faire dévier nos cœurs après nous avoir guidés.</p>
+  <p>Qu'Allah prie et salue notre Prophète Muhammad, sa famille et tous ses Compagnons.</p>
+
+  <div class="ornament">❖ ❖ ❖</div>
+
+  <div class="notes"><ol>
+    <li id="n-co-1">Rapporté par Muslim (49), At-Tirmidhî (2172), An-Nasâʾî (5009), Abû Dâwûd (1140), Ibn Mâjah (4013) et Ahmad (3/10).</li>
+    <li id="n-co-2"><i>Majmûʿ al-Fatâwâ</i> (28/179-180).</li>
+    <li id="n-co-3">Rapporté par Muslim (55), An-Nasâʾî (4197), Abû Dâwûd (4944) et Ahmad (4/102).</li>
+    <li id="n-co-4">Rapporté par Al-Bukhârî (481), Muslim (2585), At-Tirmidhî (1928), An-Nasâʾî (2560) et Ahmad (4/405).</li>
+    <li id="n-co-5">Rapporté par Abû Dâwûd (4682), At-Tirmidhî (1162) et Ahmad (2/250).</li>
+  </ol></div>
+
+  <div class="tn"><strong>Note du traducteur.</strong> Les versets et hadiths sont reproduits d'après le texte de l'édition arabe (Dâr al-Mîrâth an-Nabawî, 2ᵉ éd., 1433/2012), puis traduits dans un bloc séparé. Les numéros de référence des notes suivent cette édition ; là où le chiffre de la numérisation était difficilement lisible, la numérotation usuelle des recueils a été retenue. Aucune anomalie dans les textes coraniques cités n'a été relevée ; on remarquera seulement que l'auteur cite plusieurs versets partiellement (Al-Mâʾida : 54 s'arrête à « lawmata lâʾim », Âl ʿImrân : 100 puis 106 avec la mention « jusqu'à Sa parole »), ce qui a été conservé tel quel.</div>
+</section>
+
+</main>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
